@@ -5,15 +5,16 @@ header{
 img{
     float: left;
 }
-.name{
+.Name{
 margin: 20px 0px;
+width:100%;
 }
-.email{
-    background-color: red;
+.Email{
 margin: 20px 0px;
+width:100%;
 }
 .message{
-    content: 110px;
+    width:100%;
 }
 .button{
 margin: 20px 0px;
@@ -27,18 +28,24 @@ margin: 20px 0px;
 
 header{
     width:100%;
-    padding:20px
-
+    
 }
 
 .menuheader{
-    width:30%;
-    float:right
+    width:180px;
+    float:right;
 }
 
 
 .nameheader{
-    width:70%;
-    height:120px;
-    float:left
+    width:680px;
+}
+.content{
+    width:960px;
+    margin:auto;
+    background-color: white;
+}
+
+body{
+    background-color: teal;
 }
