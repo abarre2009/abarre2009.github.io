@@ -1,0 +1,44 @@
+header{
+    width:100%
+}
+
+img{
+    float: left;
+}
+.name{
+margin: 20px 0px;
+}
+.email{
+    background-color: red;
+margin: 20px 0px;
+}
+.message{
+    content: 110px;
+}
+.button{
+margin: 20px 0px;
+}
+.section{
+    content:40px;
+    padding:80px;
+    border: 80px;
+    margin: 0px 80px;
+}
+
+header{
+    width:100%;
+    padding:20px
+
+}
+
+.menuheader{
+    width:30%;
+    float:right
+}
+
+
+.nameheader{
+    width:70%;
+    height:120px;
+    float:left
+}
