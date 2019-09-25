@@ -39,7 +39,7 @@ header{
     
 }
 
-.menuheader{
+#menuheader{
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     width:240px;
@@ -73,4 +73,12 @@ body{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin:220px 0px;
     background-color:#666666
+}
+.croatia{
+    height: 1.2in;
+    width: 2.4in;
+padding: 150px;
+border:  150px;
+margin:  150px;
+
 }
