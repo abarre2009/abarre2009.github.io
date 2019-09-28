@@ -8,27 +8,50 @@
 
 
     </Head>
-    <Body class="body" style="background-image:url(images/pool_table.png);">
-        <div class="content">
+    <Body >
+        <header class="content">
             <H1>Contact</H1>
-            <Div>
-                <form>
-                    Name
-                    <input class="Name">
-                    <br>
-                    Email
-                    <input class="Email">
-                    <br>
-                    Message
-                    <input class="message">
+            <hr>
+            <nav class="menuheader">
+                    <a href="index.html"> about</a> |
+        
+                    <a href="portfolio.html"> Portfolio</a> |
+        
+                    <a href="contact.html"> contact</a>
+                </nav>
+            <Div class=>
+                <form class="form-color">
+
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="Name" id="name"
+                            placeholder="John Smith" required="required">
+                        </li>
+                        
+                        <li>
+                                <label for="email">Email</label>
+                                <input type="text" name="Email" id="Email"
+                                placeholder="example@gmail.com" required="required">
+                        </li>
+
+                        <li>
+                                    <label for="message">Message</label>
+                                    <input type="text" name="message" id="message"
+                                    placeholder="message" required="required">
+                        </li>
+
+                        
+                    </ul>
+                    <input type="submit" name="submit">
 
                 </form>
             </Div> 
-            <button class="button">Submit</button>
-        </div>
+            
+        </header>
         
             <footer class="copyright">
-                copyright©
+                &copy;copyright
             </footer>
 
     </body>

@@ -2,6 +2,10 @@
 padding:25px;
 
 }
+.form-color[
+background: url("../../images/pool_table.png")    
+
+]
 header{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     width:100%;
