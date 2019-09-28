@@ -3,44 +3,34 @@
 
 <head>
 
-    <title>Abdul Barre</title>
-
+    <title id="logo">Abdul Barre</title>
+    <link rel="stylesheet" type="text/css" href="../homework01/reset.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="nameheader">
-            <h1>Abdul Barre</h1>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo"> Abdul Barre </a>
+            <nav>
+                <a href="index.html"> about</a> 
+                <a href="portfolio.html"> Portfolio</a> 
+                <a href="contact.html"> contact</a>
+            </nav>
+
         </div>
-
-        <nav class="menuheader">
-            <a href="index.html"> about</a> |
-
-            <a href="portfolio.html"> Portfolio</a> |
-
-            <a href="contact.html"> contact</a>
-        </nav>
-
-
 
     </header>
 
 
-    <div class="section">
-        <div class="about-me">
+    <div id="main-container" class="container" >
+        <section class="about-me">
             <h1>About Me</h1>
-            <hr>
-        </div>
-
-        <div>
-            <img id="Dragon"
+            
+            <img class="my-pic"
                 src="https://mail.google.com/mail/u/0?ui=2&ik=9043df94d3&attid=0.3&permmsgid=msg-f:1325334414448918061&th=126488a0c5d3fe2d&view=att&disp=safe"
-                alt="">
-        </div>
-
-        <div>
+                alt="my pic ">
 
             <p>
                 Hello My name is Abdul, I was born in East Africa and I migrated to the united states in 1997 at the age
@@ -55,7 +45,7 @@
                 I look forward to all the awesome stuff I'm going to learn in the next 6 months.<br>
                 I plan to make a side project for myself so I can sharpen my coding skills as the class goes along.
             </p>
-
+        </section>
             <footer class="copyright">
                 &copy; copyright
             </footer>
