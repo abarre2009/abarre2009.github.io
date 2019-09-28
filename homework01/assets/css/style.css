@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../homework01/images/pool_table.png);"
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(../homework01/images/pool_table.png);
+    font-family:'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
     color:#777777;
    font-size: 18px;
    line-height: 34px;
@@ -14,8 +14,7 @@ body{
     width:100%;
     max-width: 960px;
     margin: 0 auto;
-    clear: both
-
+    clear: both;
 }
 
 h1, h2, h3, p {
@@ -60,10 +59,10 @@ h2, h3{
 #logo{
     width: 250px;
     height:90px;
-    background: #4aaaa5
+    background: #4aaaa5;
     float: left;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    text-allign: center;
+    font-family: 'Georgia', Times, 'Times New Roman', 'serif';
+    text-align: center;
     Line-height: 90px;
     color: #777777;
 }
@@ -86,7 +85,7 @@ nav a{
     padding-top: 130px;
 }
 .main-section{
-    background: #ffffff
+    background: #ffffff;
     padding:30px;
     margin: 0 0 40px 0;
     width: 100%;
@@ -109,9 +108,9 @@ footer{
     color: #fff;
     padding: 30px 0;
     clear: both;
-    border-top: 8 px solid #4aaaa5;
+    border-top: 8px solid #4aaaa5;
     color: #ccc;
-    font-size: 12;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -138,8 +137,8 @@ footer{
     color: #fff;
     text-align: center;
     position: absolute;
-    bottom 20px;
-    padding 15px;
+    bottom: 20px;
+    padding: 15px;
     width: 100%;
     line-height: 30px;
     margin-bottom: 0;
@@ -181,7 +180,7 @@ textarea{
 }
 
 input[type=submit]{
-    background: #4aaaa5
+    background: #4aaaa5;
     border: 0 none;
     color: #ffffff;
     font-size: 18px;
@@ -217,34 +216,25 @@ input[type=submit]{
 
 
 
+  
 
-.form-color[
-background: url("../../images/pool_table.png")    
 
-]
-header{
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    width:100%;
-}
 
-img{
-    float: left;
-    width: 15%;
-    Height: 15%;
-}
+
 .Name{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 margin: 20px 0px;
 width:100%;
 }
+
 .Email{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 margin: 20px 0px;
 width:100%;
 }
+
 .message{
     width:100%;
-    content: 150px;
 }
 
 .section{
