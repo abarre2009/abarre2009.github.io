@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <h2>Generate a Password</h2>
+    <textarea
+      readonly
+      id="password"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
+    <button onclick="myfunction()" id="generate">Generate Password</button>
+    <p id="demo"></p>
+    
+    <button id="copy">
+      Copy to Clipboard
+    </button>
+    <script>
+        function myFunction() {
+          var text = "";
+          var i;
+          for (i = 0; i < 5; i++) {
+            if (i === 3) {
+              continue;
+            }
+            text += "The number is " + i + "<br>";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+
+
+  </body>
+</html>
