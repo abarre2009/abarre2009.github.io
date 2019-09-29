@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <Head>
-        <title> Contact info</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+    <title>Abdul Barre</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="../homework01/reset.css">
+
         <link rel="stylesheet" href="../homework01/assets/css/">
 
+</head>
 
-
-    </Head>
-    <Body class="body" style="background-image:url(../homework01/images/pool_table.png);">
-        <header>
-                <div>
-
-                </div>
-                
-                
-                
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<body>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo"> Abdul Barre </a>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                         <a class="navbar-brand" href="#">Abdul Barre</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                           <span class="navbar-toggler-icon"></span>
@@ -41,32 +39,45 @@
                         </div>  
                       </nav>
                       <br>
-                
 
-        </header>
-        
-
-        <div class="content">
-            <H1>Contact</H1>
-            <Div>
-                <form>
-                    Name
-                    <input class="Name">
-                    <br>
-                    Email
-                    <input class="Email">
-                    <br>
-                    Message
-                    <input class="message">
-
-                </form>
-            </Div> 
-            <button class="button">Submit</button>
         </div>
-        
-            <footer class="copyright">
-                copyright©
-            </footer>
 
-    </body>
+    </header>
+    <div id="main-container" class="container">
+        <section class="about-me">
+            <h1>contact</h1>
+            <form>
+
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="John Smith" required="required">
+                    </li>
+
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="Email" placeholder="example@gmail.com" required="required">
+                    </li>
+
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="message" required="required"></textarea>
+                    </li>
+
+
+                </ul>
+                <input type="submit" name="submit">
+
+            </form>
+            </section>
+    </div>
+
+
+
+    <footer class="copyright">
+        &copy;copyright
+    </footer>
+
+</body>
+
 </html>
