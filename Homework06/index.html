@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,44 +6,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./weatherstyle.css" />
 </head>
 
+<h1>Weather Dashboard</h1>
 <body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 cityinfo">
+             <h5>Search for a city:</h5>
+             <form>
+                <input id="cityname" type="text">
+                <button id="searchbutton">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+             </form>
+        </div>
 
-    <div>
-
-        <form>
-
-            <input id="searchbar" type="text">
-            <button id="searchbutton">
-                      Search
-            </button>
-        </form>
+        <div class="col-md-8 weekforecast">
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+            <div class="uv"></div>
+            <div class="future"></div>
+        </div>
 
     </div>
-    <div id="searchresults"> </div>
+   
 
-
-
-    <div> </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-    
-
-
-
-        <script src="./javalava.js">
-
-    </script>
 
    
 
 
+</div>
+       
+
+
+        
+
+
+
+
+    
+  
+<script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="./javalava.js"></script>
 </body>
 
 </html>
