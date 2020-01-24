@@ -16,3 +16,10 @@ app.use(require("./controllers/burgers_controller"));
 
 
 app.listen (port, ()=>console.log("applistening", port ));
+
+server.listen(port, function(){
+
+    console.log("server listening on: http://localhost:" + port)
+
+
+})

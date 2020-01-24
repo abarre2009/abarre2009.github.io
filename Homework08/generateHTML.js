@@ -1,4 +1,4 @@
-function generatehtml(data){
+function generatehtml(userInfo){
 
     return `<!DOCTYPE html>
     <html lang="en">
@@ -13,7 +13,7 @@ function generatehtml(data){
             Name
         </div>
         <div>
-            <img src=${data.url} />
+            <img src=${userInfo.data.url} />
         </div>
         
     
