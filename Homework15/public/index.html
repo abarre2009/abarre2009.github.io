@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styling.css" />
+    <title>Fitness Tracker</title>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <a href="/">Fitness Tracker</a>
+        <a href="/stats">Dashboard</a>
+      </div>
+      <span>Fitness Tracker</span>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 section">
+          <div class="previous-workout">
+            <h2>Previous Workouts</h2>
+          </div>
+        </div>
+        <div class="col-md-4 section">
+          <div class="addinputs">
+            <h3>Create Your Workout</h3>
+            <form class="text-center border border-light p-5">
+              <div class="form-group">
+                <label>Exercise Type</label>
+                <select id="extype">
+                  <option value="Cardio">Cardio</option>
+                  <option value="Resistance">Resitance</option>
+                  <option value="Strength">Strength</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Exercise NAme</label>
+                <input type="text" id="exname" class="form-control mb-4" />
+              </div>
+              <div class="form-group">
+                <label>Duration in minutes</label>
+                <input type="number" id="duration" class="form-control mb-4" />
+              </div>
+              <div class="form-group">
+                <label>Weights</label>
+                <input type="number" id="weights" class="form-control mb-4" />
+              </div>
+              <div class="form-group">
+                <label>Reps</label>
+                <input type="number" id="reps" class="form-control mb-4" />
+              </div>
+              <div class="form-group">
+                <label>Sets</label>
+                <input type="number" id="sets" class="form-control mb-4" />
+              </div>
+              <div class="form-group">
+                <label>Distance</label>
+                <input type="number" id="distance" class="form-control mb-4" />
+              </div>
+            </form>
+            <button id="newworkout">New Workout</button>
+            <button id="addtoprevious">Add to Previous Workout</button>
+          </div>
+        </div>
+        <div class="col-md-4 section">
+          <div class="new-workout">
+            <canvas id="myChart" width="800" height="800"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

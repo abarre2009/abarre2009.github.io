@@ -1,6 +1,5 @@
-function generatehtml(userInfo){
-
-    return `<!DOCTYPE html>
+function generatehtml(userInfo) {
+  return `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,6 +17,6 @@ function generatehtml(userInfo){
         
     
     </body>
-    </html>`
+    </html>`;
 }
 module.exports = generatehtml;

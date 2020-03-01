@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addinputs {
+  display: block;
+}
+
+.row {
+  width: 93%;
+}
+
+.section {
+  width: 33%;
+}

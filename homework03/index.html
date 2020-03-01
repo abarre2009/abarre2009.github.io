@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <header class="header">
-          <h1>Password Generator</h1>
-        </header>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <header class="header">
+            <h1>Password Generator</h1>
+          </header>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section">
-          <h2>Generate a Password</h2>
-          <hr>
-          <br />
-          <textarea readonly id="password" placeholder="Your Secure Password"
-            aria-label="Generated Password"></textarea>
-          <hr>
-          <br />
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section">
+            <h2>Generate a Password</h2>
+            <hr />
+            <br />
+            <textarea
+              readonly
+              id="displaypassword"
+              placeholder="Password will be displayed here"
+            ></textarea>
+            <hr />
+            <br />
 
-          <button onclick=myFunction(event) id="generate">Generate Password</button>
-          <p id="demo"></p>
-          <button id="copy">
-            Copy to Clipboard
-          </button>
+            <button id="genpassword" onclick="generatedpassword()">
+              Generate Password
+            </button>
+            <p id="demo"></p>
+
+            <button id="copytoclip" onclick="copytoclipboard()">
+              Copy to Clipboard
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="./javalava.js"></script>
-</body>
-
+    <script src="./javalava.js"></script>
+  </body>
 </html>
