@@ -1,11 +1,13 @@
-var express = require ("express")
-var app = express()
-var port = 3000
-app.use(express.json());
-app.use(express.urlencoded({
-    extended:true
-}));
-app.use(express.static("public"));
-app.use(require("./routes/routeshtml"));
-app.listen (port, ()=>console.log("applistening", port ));
+const express = require("express");
+const routesapi = require("./routes/routesapi");
+const routeshtml = require("./routes/routeshtml");
 
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.use("/api", routesapi);
+app.use("/", routeshtml);
+app.listen(PORT, () => console.log(`listening on PORT: ${PORT}`));
