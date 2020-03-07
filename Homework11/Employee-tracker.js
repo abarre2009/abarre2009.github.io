@@ -1,5 +1,6 @@
 const { prompt } = require("inquirer");
 const logo = require("asciiart-logo");
+const mysql = require("mysql");
 require("console.table");
 
 var db = mysql.createConnection({
