@@ -1,21 +1,11 @@
 const { prompt } = require("inquirer");
 const logo = require("asciiart-logo");
-const mysql = require("mysql");
+const db = require("./db");
 require("console.table");
-
-var db = mysql.createConnection({
-  host: "localhost",
-
-  port: 3306,
-
-  user: "root",
-
-  password: "Eagles#27",
-  database: "Employee_Trackers"
-});
 
 init();
 
+// Display logo text, load main prompts
 function init() {
   const logoText = logo({ name: "Employee Manager" }).render();
 
@@ -91,6 +81,7 @@ async function loadMainPrompts() {
     }
   ]);
 
+  // Call the appropriate function depending on what the user chose
   switch (choice) {
     case "VIEW_EMPLOYEES":
       return viewEmployees();
