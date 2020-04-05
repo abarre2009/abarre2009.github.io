@@ -1,7 +1,7 @@
 var express = require("express");
 var expresshandles = require("express-handlebars");
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(
   express.urlencoded({

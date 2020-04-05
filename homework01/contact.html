@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
+  <head>
     <title>Abdul Barre</title>
 
-    <link rel="stylesheet" type="text/css" href="../homework01/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../homework01/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header id="masthead">
-        <div class="container">
-            <a href="index.html" id="logo"> Abdul Barre </a>
-            <nav>
-                <a href="index.html"> about</a>
-                <a href="portfolio.html"> Portfolio</a>
-                <a href="contact.html"> contact</a>
-            </nav>
-
-        </div>
-
+      <div class="container">
+        <a href="index.html" id="logo"> Abdul Barre </a>
+        <nav>
+          <a href="index.html"> about</a>
+          <a href="portfolio.html"> Portfolio</a>
+          <a href="contact.html"> contact</a>
+        </nav>
+      </div>
     </header>
     <div id="main-container" class="container">
-        <section class="about-me">
-            <h1>contact</h1>
-            <form>
+      <section class="about-me">
+        <h1>contact</h1>
+        <form>
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="John Smith"
+                required="required"
+              />
+            </li>
 
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                        <input type="text" name="Name" id="name" placeholder="John Smith" required="required">
-                    </li>
+            <li>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="Email"
+                id="Email"
+                placeholder="example@gmail.com"
+                required="required"
+              />
+            </li>
 
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="text" name="Email" id="Email" placeholder="example@gmail.com" required="required">
-                    </li>
-
-                    <li>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="message" required="required"></textarea>
-                    </li>
-
-
-                </ul>
-                <input type="submit" name="submit">
-
-            </form>
-            </section>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="message"
+                required="required"
+              ></textarea>
+            </li>
+          </ul>
+          <input type="submit" name="submit" />
+        </form>
+      </section>
     </div>
 
-
-
     <footer class="copyright">
-        &copy;copyright
+      &copy;copyright
     </footer>
-
-</body>
-
+  </body>
 </html>
